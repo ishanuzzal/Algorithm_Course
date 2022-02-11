@@ -1,3 +1,5 @@
+//choose lower index as pivort
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -21,7 +23,6 @@ void quickSort(int arr[], int low,int high){
         int pivort = getPivort(arr,low,high);
         quickSort(arr,low,pivort-1);
         quickSort(arr,pivort+1,high);
-        cout<<"Hi"<<endl;
     }
 }
 
