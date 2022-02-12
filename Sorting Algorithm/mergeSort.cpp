@@ -50,7 +50,6 @@ void printArray(){
 
 void mergeSort(int a[],int l,int r){
   if(l<r){
-    cout<<"hi"<<endl;
     int mid = (l+r)/2;
     mergeSort(a,l,mid);
     mergeSort(a,mid+1,r);
