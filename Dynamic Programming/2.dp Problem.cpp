@@ -20,7 +20,7 @@ int main(){
 
     for(int i=1; i<=n; i++){
         for(int j=0; j<=tk; j++){
-            if(dp[i-1][j] && j+coin[i]<=10){
+            if(dp[i-1][j] && j+coin[i]<=tk){
                 dp[i][j+coin[i]] = 1;
                 dp[i][j]=1;
             }
