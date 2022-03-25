@@ -30,14 +30,14 @@ int main(){
         }
     }
 
-   for(int i=0; i<=n; i++){
+  /* for(int i=0; i<=n; i++){
         for(int j=0; j<=tk; j++){
             cout<<dp[i][j]<<" ";
         }
         cout<<endl;
-    }
+    }*/
 
-    //cout<<dp[n][tk]<<endl;
+    cout<<dp[n][tk]<<endl;
 
     
 }
