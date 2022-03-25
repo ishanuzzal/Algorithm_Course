@@ -24,21 +24,20 @@ int main(){
                 dp[i][j+coin[i]] = 1;
                 dp[i][j]=1;
             }
-            else if(dp[i][j]==0){
+            else if(dp[i-1][j]!=0){
                 dp[i][j]=dp[i-1][j];
             }
         }
     }
 
-  /*  for(int i=1; i<=n; i++){
+   for(int i=0; i<=n; i++){
         for(int j=0; j<=tk; j++){
             cout<<dp[i][j]<<" ";
         }
         cout<<endl;
-    }*/
+    }
 
-    cout<<dp[n][tk]<<endl;
+    //cout<<dp[n][tk]<<endl;
 
     
 }
-
