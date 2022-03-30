@@ -4,3 +4,4 @@
 2. Given some coins.you need to check is it possible to get the given amount by using those coins(each coin can be used at one time). 1 in output means possible and 0 means impossible.(tabulation/itteration) 
 3. Given some coins. You need to findOut how many possible combination can be made to get the given amount by using one coin at a time.(tabulation)
 4. Given some coins. You need to check how many possible combination can be made to get the given amount by using those coins(infinite number of coins). (tabulation)
+5. Finding longest decreasing subsequence from given array.
