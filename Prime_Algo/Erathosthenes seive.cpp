@@ -63,7 +63,7 @@ int main() {
   arr[0]=arr[1] = 1;
   int sqt = sqrt(M);
   
-  for(int i=2; i<=M; i+=2){
+  for(int i=4; i<=M; i+=2){
     arr[i] = 1;
   }
 
