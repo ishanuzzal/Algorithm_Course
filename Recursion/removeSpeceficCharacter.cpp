@@ -18,7 +18,7 @@ string removeChar(string s,char c){
 int main(){
 
   string s = "safiqul islam uzzal";
-  string ss = removeChar(s,a);
+  string ss = removeChar(s,'a');
   cout<<ss<<endl;
 
   return 0;
