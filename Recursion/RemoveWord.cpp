@@ -30,6 +30,15 @@ string findWord(string s1, string s2){
   return findWord(s1.substr(1),s2);
 }
 
+/*string findWord(string s1,string s2,string s){
+  if(s1.size()==0) return s;
+  if(s1[0]==s2[0]){
+    if(fullCheck(s1.substr(1), s2.substr(1))) return findWord(s1.substr(s2.size()),s2,s);
+  }
+  s+=s1[0];
+  return findWord(s1.substr(1),s2,s);
+}*/
+
 
 int main(){
 
