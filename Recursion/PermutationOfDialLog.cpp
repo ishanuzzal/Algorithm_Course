@@ -43,9 +43,9 @@ void permutation(string u, string p){
 
 /* Assume you use a button phone. To write a message you have to use numbers(1,2,3)..
 By pressing 1 you can write a,b,c and by pressing 2 u can write d,e,f.
-This sequence is maintained for all the numbers expect 9,where there is only two characters left.
+This sequence is maintained for all the numbers expcept 9, where there is only two characters left.
 so by pressing 9 u can write y,z.
-To write a u need to press 1 one time, to write b u need to press 1 two times.
+To write 'a' u need to press 1 one time, to write 'b' u need to press 1 two times.
 This code gives us possible combination we can make by pressing given buttons*/
 
 
