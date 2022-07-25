@@ -27,22 +27,28 @@ void init() {
     #endif 
 }
 
-void possibleWays(int r, int c,string p){
-  if(r==3 && c==3){
+void possibleWays(int arr[3][3],int r, int c,string p){
+  if(r==2 && c==2){
     cout<<p<<endl;
     return;
   }
-  if(r>3) return;
-  if(c>3) return;
-  possibleWays(r+1,c,p+"D");
-  possibleWays(r,c+1,p+"R");
+  if(r>2 || c>2) return;
+  if(arr[r][c]) return;
+  arr[r][c] = 1;
+  if(r>0) possibleWays(arr,r-1,c,p+"U");
+  if(c>0) possibleWays(arr,r,c-1,p+"L");
+  possibleWays(arr,r+1,c,p+"B");
+  possibleWays(arr,r,c+1,p+"R");
+  arr[r][c] = 0;
 }
 
 
 int main(){
   
   init(); 
-  possibleWays(1,1,"");
+  int arr[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
+  
+  possibleWays(arr,0,0,"");
  
   
   return 0;
